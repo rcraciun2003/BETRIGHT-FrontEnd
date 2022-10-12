@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "../../components/Button";
-import HeaderBKGOverlay from "../../assets/HeaderBKGOverlay.svg";
+import HeaderBKGOverlay from "../../assets/HeaderBKGOverlay.jpeg";
 
 export const Header = () => {
   return (
@@ -22,7 +22,6 @@ export const Header = () => {
           ></Button>
         </div>
       </div>
-      <img className="header-overlay" src={HeaderBKGOverlay}></img>
     </section>
   );
 };

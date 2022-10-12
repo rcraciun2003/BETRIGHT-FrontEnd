@@ -12,6 +12,9 @@ import { Ponturi } from "./pages/Ponturi";
 import { Tipsteri } from "./pages/Tipsteri";
 import { Bloguri } from "./pages/Bloguri";
 import { Profil } from "./pages/Profil";
+import { Contact } from "./pages/Contact";
+import { SinglePost } from './pages/SinglePost';
+import { WriteBlog } from './pages/WriteBlog';
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
@@ -26,6 +29,9 @@ root.render(
         <Route path="bloguri" element={<Bloguri />} />
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />} />
+        <Route path="contact" element={<Contact />} />
+        <Route path="single-post" element={<SinglePost />} />
+        <Route path="write-blog" element={<WriteBlog />} />
         <Route
           path="*"
           element={

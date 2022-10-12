@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Button } from "./Button";
 import { FaBars } from "react-icons/fa";
-import LOGO from "../assets/LOGO.png";
+import LOGO from "../assets/LOGO.jpg";
 import { Link } from "react-router-dom";
 import { Ponturi } from "../pages/Ponturi";
 export const Navbar = () => {
@@ -21,18 +21,18 @@ export const Navbar = () => {
           </div>
           <div className="nav-menu">
             <a href="/">Acasa</a>
-            <a href="/meciuri">Ponturi</a>
-            <a href="/blog">Blog</a>
+            <a href="/ponturi">Ponturi</a>
+            <a href="/meciuri">Meciuri</a>
+            <a href="/bloguri">Blog</a>
             <a href="/tipsteri">Tipsteri</a>
             <a href="/contact">Contact</a>
           </div>
           <div className="log-reg">
-            <a href="/login">Login</a>
-            <Button
-              text={"Register"}
-              color="#00d047"
-              link={"/register"}
-            ></Button>
+          <Button
+            text="Intra in cont"
+            color="#00b300"
+            link={"/login"}
+          ></Button>
           </div>
         </div>
       </div>
@@ -44,8 +44,11 @@ export const Navbar = () => {
           <a>Tipsteri</a>
           <a>Contact</a>
           <div className="log-reg-mini">
-            <a>Login</a>
-            <Button text={"Register"} color="#00d047"></Button>
+          <Button
+            text="Intra in cont"
+            color="#00b300"
+            link={"/login"}
+          ></Button>
           </div>
         </div>
       )}

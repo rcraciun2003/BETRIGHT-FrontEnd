@@ -17,6 +17,8 @@ import { Profil } from "./pages/Profil";
 import { Tipsteri } from "./pages/Tipsteri";
 import { Login } from "./pages/Login";
 import { Register } from "./pages/Register";
+import { Bloguri } from "./pages/Bloguri";
+import { Contact } from "./pages/Contact";
 function App() {
   return (
     <div className="App">

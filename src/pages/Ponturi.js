@@ -3,14 +3,14 @@ import { FiltruPont } from "../components/FiltruPont";
 import { Navbar } from "../components/Navbar";
 import { Whyus } from "./sections/Whyus";
 import { Pont } from "../components/Pont";
-import { HeaderAll } from "../components/HeaderAll";
+import { HeaderPonturi } from "../components/HeaderPonturi";
 import { Footer } from "./sections/Footer";
 
 export const Ponturi = ({ meci, timp, ponturi }) => {
   return (
     <>
       <Navbar></Navbar>
-      <HeaderAll title="Ponturi active" subtitle="ponturi active"></HeaderAll>
+      <HeaderPonturi title="Ponturi active" subtitle="ponturi active"></HeaderPonturi>
       <div className="ponturi">
         <div className="meci-status">
           <h1>{meci} Barcelona vs Real Madrid</h1>

@@ -16,7 +16,7 @@ export const Steps = () => {
         <div className="row">
           <img src={AlegeSport1IMG}></img>
           <div className="row-text">
-            <h2 className="title-steps"> Alege Sporturl </h2>
+            <h2 className="title-steps"> Alege Sportul </h2>
             <p className="under-title rowunder-title"> Descriere pas </p>
           </div>
         </div>

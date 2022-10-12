@@ -1,9 +1,8 @@
 import React from "react";
 import { FiltruMeci } from "../components/FiltruMeci";
 import { Navbar } from "../components/Navbar";
-import { Whyus } from "./sections/Whyus";
 import { Meci } from "../components/Meci";
-import { HeaderAll } from "../components/HeaderAll";
+import { HeaderMeciuri } from "../components/HeaderMeciuri";
 import { Footer } from "./sections/Footer";
 import { StatusMeciuri } from "../components/StatusMeciuri";
 
@@ -11,7 +10,7 @@ export const Meciuri = ({ meci, timp, meciuri, title, subtitle }) => {
   return (
     <>
       <Navbar></Navbar>
-      <HeaderAll title="Ponturi active" subtitle="ponturi active"></HeaderAll>
+      <HeaderMeciuri title="Meciuri active" subtitle="descriere meciuri active"></HeaderMeciuri>
       <div className="ponturi">
         <div className="ponturi-p">
           <div className="ponturi-filter">

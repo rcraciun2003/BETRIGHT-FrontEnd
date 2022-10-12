@@ -13,7 +13,8 @@ export const Card = ({
   return (
     <div className="card">
       <div className="card-bg">
-        <div className="card-profile"></div>
+        <div className="card-profile">
+        </div>
       </div>
       <div className="card-content-all">
         <p className="card-name">{username}</p>

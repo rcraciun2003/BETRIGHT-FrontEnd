@@ -18,7 +18,7 @@ export const Login = () => {
             value={"Login"}
           ></input>
         </form>
-      </div>
+        </div>
     </>
   );
 };

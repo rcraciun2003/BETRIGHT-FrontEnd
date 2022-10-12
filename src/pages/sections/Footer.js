@@ -1,24 +1,46 @@
 import React from "react";
-import LOGO from "../../assets/LOGO.png";
+import LOGO1 from "../../assets/LOGO-ALB.png";
+import { Button } from "../../components/Button";
 import { FaFacebook, FaInstagram } from "react-icons/fa";
+
 export const Footer = () => {
   return (
+
     <section className="footer">
       <div className="footer-box">
         <div className="footer-float">
+          <div className="column">
+          <h2>Discord</h2>
+          <Button
+            text="Verifica Discord"
+            color="#0088CC"
+            link={"/meciuri"}
+          ></Button>
+        </div>
+          <div className="column">
           <h2>Nu rata ultimele noutati din lumea sportului</h2>
           <p>Aboneaza-te si vei primi cele mai fierbinti ponturi</p>
-          <form>
-            <input type={"email"}></input>
+          
+          <form className="formFooter">
+            <input type={"email"} placeholder="Introduceti adresa de email"></input>
             <input
               type={"submit"}
               value=">"
               style={{ color: "#00c358", fontWeight: "600", fontSize: "18px" }}
             ></input>
           </form>
+          </div>
+         <div className="column">
+         <h2>Telegram</h2>
+         <Button
+            text="Verifica Telegram"
+            color="#7289da"
+            link={"/meciuri"}
+          ></Button>
+         </div>
         </div>
         <div className="footer-details">
-          <img src={LOGO}></img>
+          <img className="logo1" src={LOGO1}></img>
           <div>
             <a href="/">Acasa</a>
             <a href="">Despre Noi</a>

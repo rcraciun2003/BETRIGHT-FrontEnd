@@ -3,15 +3,15 @@ import { FiltruTipsteri } from "../components/FiltruTipsteri";
 import { Navbar } from "../components/Navbar";
 import { Card } from "../components/Card";
 import { Footer } from "./sections/Footer";
-import { HeaderAll } from "../components/HeaderAll";
+import { HeaderTipsteri } from "../components/HeaderTipsteri";
 export const Tipsteri = () => {
   return (
     <>
       <Navbar></Navbar>
-      <HeaderAll
+      <HeaderTipsteri
         title="Tipsteri"
         subtitle="lista tipsterilor activi"
-      ></HeaderAll>
+      ></HeaderTipsteri>
       <div className="ponturi">
         <div className="ponturi-p">
           <div className="ponturi-filter">
