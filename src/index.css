@@ -199,6 +199,32 @@ body{
     .title {
         font-size: 57px;
     }
+    .header-ponturi-text{
+        margin-top: 100px;
+        position: absolute;
+        font-size: 24px;
+        }
+    .header-meciuri-text{
+        margin-top: 100px;
+        position: absolute;
+        font-size: 24px;
+        }
+    .header-blog-text{
+        margin-top: 100px;
+        position: absolute;
+        font-size: 24px;
+        }
+        .header-tipsteri-text{
+            margin-top: 100px;
+            position: absolute;
+            font-size: 24px;
+            }   
+            .header-contact-text{
+                margin-top: 100px;
+                position: absolute;
+                font-size: 24px;
+                }           
+
     }
     
     @media  screen and (max-width:575px) {
@@ -206,6 +232,27 @@ body{
         .title {
             font-size: 40px;
         }
+        .header-ponturi-text{
+            margin-top: 200px;
+            position: absolute;
+            }
+        .header-meciuri-text{
+            margin-top: 200px;
+            position: absolute;
+            }
+            .header-blog-text{
+                margin-top: 200px;
+                position: absolute;
+                }
+                .header-tipsteri-text{
+                    margin-top: 200px;
+                    position: absolute;
+                    }
+                    .header-contact-text{
+                        margin-top: 200px;
+                        position: absolute;
+                        }
+
     }
     .under-title,
     .over-title {
@@ -1089,12 +1136,12 @@ body{
                 
         .header-ponturi-text{
         font-size: 2vw;
-        position: relative;
+        position: absolute;
         top: 10vw;
         left: 15vw;
         color: white
         }
-                
+              
                 
         .header-ponturi-text > *{
          margin:0;
@@ -1293,20 +1340,6 @@ body{
         padding-right: 2rem;
         margin: 2rem;
     }
-    .input-button{
-        height: 3rem;
-        background-color: #00c358;
-        padding-top: 0.7rem;
-        padding-bottom: 0.7rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        border-radius: 2rem;
-        color: white;
-        font-size: 18px;
-        font-weight: 600;
-        border: none;
-        margin: 2rem;
-    }
 
     .filtru-pont > form >div >div> label{
         font-size: 20px;
@@ -1363,6 +1396,21 @@ body{
        align-items: flex-start;
        width: 90%;
        max-width: 1320px;
+    }
+    .input-button{
+        height: 3rem;
+        background-color: #00c358;
+        padding-top: 0.7rem;
+        padding-bottom: 0.7rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        border-radius: 2rem;
+        color: white;
+        font-size: 18px;
+        font-weight: 600;
+        border: none;
+        margin: auto;
+        margin-bottom: 10px ;
     }
     .ponturi-active > * {
         margin: 1rem;
@@ -1565,22 +1613,83 @@ body{
     left: 0;
     background-size: cover;
    }
+
    .loginform{
-    width: 100vw;
-    height: 100vh;
+    width: 25%;
+    height: 70%;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    color: white;
+    margin: auto;
+    color: black;
+    margin-top: 200px;
     font-size: 24px;
     z-index: 2;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    padding: 30px;
    }
-   .loginform > input {
+
+   .loginform > h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+
+.input-form {
+    position:relative;
+    width:300px;
+    margin:50px auto 0 auto;
+  }
+  .input-form > input {
+    position:relative;
+     outline:0;
+     width:300px;
+     background:#d9d9d9;
+     padding:15px 10px;
+     border-radius:5px;
+     transition:all .5s ease;
+     border:1px solid #adadad;
+     font:18px 'Oxygen';
+   }
+   .input-form > label {
+     position:absolute;
+     left:10px;
+     top:0px;
+     font:20px/52px 'Oxygen';
+     transition:all .3s ease;
+     color:#00c358;
+   }
+   .input-form > input:focus,
+   .input-form > input:valid {
+     background:#00c358;
+     color:#333333;
+     -webkit-box-shadow: -2px 2px 13px 0px rgba(30, 201, 52, 0.75);
+-moz-box-shadow: -2px 2px 13px 0px rgba(30, 201, 52, 0.75);
+box-shadow: -2px 2px 13px 0px rgba(30, 201, 52, 0.75);
+   }
+   .input-form > input:focus ~ label,
+   .input-form > input:valid ~ label {
+ transform: translate3d(0px, -31px, 0px);
+ font: 16px/39px 'Oxygen';
+     font-weight:700;
+     color:#333333;
+   }
+   .input-button1{
+    height: 3rem;
+    width: 10rem;
+    background-color: #00c358;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 2rem;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
     border: none;
-    border-radius: 18px;
-    padding: 0.7rem 1rem  ;
-   }
+    margin: auto;
+}
+
    .backForm {
     background-color: #f7f7f7;
     border-radius: 30px;
@@ -1591,7 +1700,6 @@ body{
     z-index: 1;
     position: relative;
    };
-
 
    /* BLOG */
 
