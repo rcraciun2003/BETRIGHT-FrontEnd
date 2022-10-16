@@ -17,7 +17,7 @@ export const Navbar = () => {
                 setMenu(!menu);
               }}
             ></FaBars>
-            <img className="logo" src={LOGO}></img>
+          <a href="/"><img className="logo" src={LOGO}></img></a>
           </div>
           <div className="nav-menu">
             <a href="/">Acasa</a>
@@ -38,11 +38,12 @@ export const Navbar = () => {
       </div>
       {menu && (
         <div className="mini-menu">
-          <a>Acasa</a>
-          <a>Ponturi</a>
-          <a>Blog</a>
-          <a>Tipsteri</a>
-          <a>Contact</a>
+          <a href="/">Acasa</a>
+            <a href="/ponturi">Ponturi</a>
+            <a href="/meciuri">Meciuri</a>
+            <a href="/bloguri">Blog</a>
+            <a href="/tipsteri">Tipsteri</a>
+            <a href="/contact">Contact</a>
           <div className="log-reg-mini">
           <Button
             text="Intra in cont"

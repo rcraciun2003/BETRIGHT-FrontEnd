@@ -7,14 +7,18 @@ export const Login = () => {
       <div className="login">
         <Navbar></Navbar>
         <form className="loginform">
-          <h2>Login</h2>
-          <label>Username:</label>
-          <input type={"text"}></input>
-          <label>Password:</label>
-          <input type={"password"}></input>
+          <h2>Conecteaza-te</h2>
+         <div class="input-form">
+        <input type="text" id="input" required />
+        <label>Name</label>
+        </div>
+        <div class="input-form">
+        <input type="password" id="input" required />
+        <label>Parola</label>
+    </div>
           <input
             type={"submit"}
-            className="input-button"
+            className="input-button1"
             value={"Login"}
           ></input>
         </form>
